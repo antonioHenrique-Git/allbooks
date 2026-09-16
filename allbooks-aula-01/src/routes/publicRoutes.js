@@ -298,7 +298,7 @@ server.get('/mais-vendidos', (req, res) => {
                 {
                     "id": 3,
                     "titulo": "E-book + Impresso",
-                    "preco": 59.9,
+                    "preço": 59.9,
                     "formatos": [
                         ".pdf",
                         ".pub",
