@@ -6,7 +6,7 @@ const { emailExiste, usuarioExiste } = require('../services/userService')
 const { createToken } = require('../services/authService')
 let { userDB } = require('../config/database')
 
-server.post('/registrar', async (req, res) => {
+server.post('/cadastrar', async (req, res) => {
     const { email, senha, nome, endereco, complemento, cep } = req.body;
 
     if (emailExiste(email)) {
@@ -298,7 +298,7 @@ server.get('/mais-vendidos', (req, res) => {
                 {
                     "id": 3,
                     "titulo": "E-book + Impresso",
-                    "presso": 59.9,
+                    "preço": 59.9,
                     "formatos": [
                         ".pdf",
                         ".pub",
